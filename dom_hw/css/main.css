@@ -1,5 +1,6 @@
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(10, 121, 155);
 }
 
 #form-wrapper {
@@ -33,3 +34,4 @@ label::after {
   border-radius: 5%;
   background: #d6c227;
 }
+

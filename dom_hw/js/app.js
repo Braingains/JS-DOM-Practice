@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const newItemForm = document.querySelector('#new-item-form');
     newItemForm.addEventListener('submit', handleNewItemFormSubmit);
 
-
+    const deleteAllButton = document.querySelector('#delete-all');
+    deleteAllButton.addEventListener('click', handleDeleteAllClick);
 
 });
 
@@ -14,7 +15,7 @@ const handleNewItemFormSubmit = function (event) {
     bandList.appendChild(bandListItem);
 
     event.target.reset();
-}
+};
 
 const createBandListItem = function (form) {
     const bandListItem = document.createElement('li');
@@ -37,4 +38,9 @@ const createBandListItem = function (form) {
     bandListItem.appendChild(rating);
 
     return bandListItem;
-}
+};
+
+const handleDeleteAllClick = function (event) {
+    const bandList = document.querySelector('#band-list');
+    bandList.innerHTML = '';
+};
